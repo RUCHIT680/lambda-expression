@@ -19,7 +19,7 @@ public class userregis {
 	private static void email(String mail) {
 		Pattern pattern = Pattern.compile(
 				"\"^[0-9a-zA-Z]+([._+-][0-9a-zA-Z]+)*@([0-9a-zA-Z][-]?)+[.][a-zA-Z]{2,4}([.][a-zA-Z]{2,4})?$\"");
- {
+@@ -28,7 +28,7 @@ private static void email(String mail) {
 			System.out.println("Entered email is invalid");
 		}
 	
@@ -27,7 +27,8 @@ public class userregis {
 	// Method to validate mobile
 	private static void mobile(String mobile) {
 		Pattern pattern = Pattern.compile("^[1-9][0-9]\s[1-9][0-9]{9}");
-		Matcher matcher = pattern.matcher(mobile);{
+		Matcher matcher = pattern.matcher(mobile);
+		{
 			System.out.println("Entered number is invalid");
 		}
 
@@ -45,8 +46,7 @@ public class userregis {
 	}
 
 	public static void main(String[] args) {
-		{
-	}
+@@ -61,6 +72,11 @@ public static void main(String[] args) {
 		String mobile = sc.next();
 		mobile(mobile);
 
